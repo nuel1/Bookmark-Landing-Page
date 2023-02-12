@@ -3,6 +3,20 @@
   src: url(assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
+// Variable
+
+:root {
+  ---primary: hsl(229, 8%, 60%);
+  --secondary: hsl(0, 0%, 100%);
+  --btn-primary: hsl(231, 57%, 55%);
+  --btn-secondary: hsl(0, 94%, 66%);
+  --bg-primary: hsl(231, 69%, 60%);
+  --bg-secondary: hsl(229, 31%, 21%);
+  --min-font-weight: 500;
+  --max-font-weight: 400;
+  --max-page-width: 85%;
+}
+
 // General reset
 * {
   font-family: Rubik, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -21,7 +35,8 @@ a {
 }
 
 img,
-a {
+a,
+button {
   display: inline-block;
 }
 
@@ -29,7 +44,22 @@ input {
   outline: none;
 }
 
-// Variable
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
 
-:root {
+.btn-login--mobile {
+  width: 100%;
+  border: 2px solid var(--secondary);
+  background: transparent;
+  color: var(--secondary);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  letter-spacing: 0.1rem;
 }
