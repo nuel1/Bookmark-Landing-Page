@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Rubik;
+  src: url(assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+// General reset
+* {
+  font-family: Rubik, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+a {
+  display: inline-block;
+}
+
+input {
+  outline: none;
+}
+
+// Variable
+
+:root {
+}
