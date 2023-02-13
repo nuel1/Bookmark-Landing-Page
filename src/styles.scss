@@ -63,3 +63,25 @@ h6 {
   margin-top: 2rem;
   letter-spacing: 0.1rem;
 }
+
+.btn--close-navbar,
+.btn--open-navbar {
+  background: transparent;
+  border: transparent;
+  margin-left: auto;
+}
+
+.container {
+  width: var(--max-page-width);
+  margin-inline: auto;
+}
+
+.mobile-navbar-header,
+.mobile-header {
+  display: flex;
+}
+
+header,
+.mobile-navbar {
+  padding-block: 2.5rem;
+}

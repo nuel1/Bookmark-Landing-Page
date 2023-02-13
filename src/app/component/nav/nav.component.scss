@@ -30,29 +30,23 @@ nav {
 
 .mobile-navbar-header {
   margin-bottom: 2rem;
-  display: flex;
-  justify-content: space-between;
 }
 
-.mobile-navbar-links a {
-  color: var(--secondary);
-  line-height: 3.3rem;
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
+.mobile-navbar-links {
+  a {
+    color: var(--secondary);
+    line-height: 3.3rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
 }
 
-.mobile-navbar-links li {
-  text-align: center;
-}
-
-.btn-close {
-  background: transparent;
-  border: transparent;
-}
-
-.mobile-navbar-links li {
-  border-top: 1px solid hsla(0, 0%, 100%, 0.119);
+.mobile-navbar-links {
+  li {
+    text-align: center;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.119);
+  }
 }
 
 .mobile-navbar-footer {
@@ -66,4 +60,8 @@ nav {
   display: flex;
   gap: 2rem;
   align-items: center;
+}
+
+nav {
+  display: none;
 }
