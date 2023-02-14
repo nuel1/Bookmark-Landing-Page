@@ -1,3 +1,11 @@
 .main {
   overflow-x: hidden;
 }
+
+.extension-list {
+  li {
+    width: 200px;
+    margin-block: 2rem;
+    margin-left: 2rem;
+  }
+}

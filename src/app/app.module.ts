@@ -7,6 +7,7 @@ import { NavComponent } from './component/nav/nav.component';
 import { HomeComponent } from './component/home/home.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { ButtonComponent } from './component/button/button.component';
+import { ExtensionCardComponent } from './component/extension-card/extension-card.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ButtonComponent } from './component/button/button.component';
     HomeComponent,
     FooterComponent,
     ButtonComponent,
+    ExtensionCardComponent,
   ],
   imports: [BrowserModule],
   providers: [],
