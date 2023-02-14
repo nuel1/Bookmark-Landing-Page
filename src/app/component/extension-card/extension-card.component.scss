@@ -1,0 +1,17 @@
+.extension-card {
+  width: 100%;
+  box-shadow: 0px 10px 12px hsl(231deg 69% 60% / 17%);
+  border-radius: 10px;
+  text-align: center;
+  padding-block: 1rem;
+}
+
+.extension-card {
+  img {
+    vertical-align: middle;
+  }
+}
+
+.dotted-border {
+  border-style: dashed;
+}
