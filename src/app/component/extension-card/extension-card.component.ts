@@ -1,3 +1,4 @@
+import { ArrayType } from '@angular/compiler';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -6,8 +7,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./extension-card.component.scss'],
 })
 export class ExtensionCardComponent {
-  @Input() imgSrc = '';
-  @Input() imgAlt = '';
+  @Input() src = '';
+  @Input() alt = '';
   @Input() title = '';
   @Input() version = '';
+
+  iterationMeans = Array.from({ length: 18 });
 }

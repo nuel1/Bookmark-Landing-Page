@@ -1,9 +1,11 @@
 <div class="extension-card">
-  <img src="{{ imgSrc }}" alt="{{ imgAlt }}" />
+  <img [src]="src" [alt]="alt" />
   <p>
     <strong>{{ title }}</strong>
   </p>
   <small>{{ version }}</small>
-  <div class="dotted-border"></div>
+  <div class="dotted-border">
+    <span *ngFor="let i of iterationMeans"><b>.</b></span>
+  </div>
   <app-button value="Add & Install Extension"></app-button>
 </div>

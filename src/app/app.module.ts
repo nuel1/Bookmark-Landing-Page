@@ -8,6 +8,7 @@ import { HomeComponent } from './component/home/home.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { ButtonComponent } from './component/button/button.component';
 import { ExtensionCardComponent } from './component/extension-card/extension-card.component';
+import { FaqComponent } from './component/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ExtensionCardComponent } from './component/extension-card/extension-car
     FooterComponent,
     ButtonComponent,
     ExtensionCardComponent,
+    FaqComponent,
   ],
   imports: [BrowserModule],
   providers: [],

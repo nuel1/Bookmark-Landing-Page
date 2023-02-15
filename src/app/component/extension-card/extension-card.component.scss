@@ -3,7 +3,7 @@
   box-shadow: 0px 10px 12px hsl(231deg 69% 60% / 17%);
   border-radius: 10px;
   text-align: center;
-  padding-block: 1rem;
+  padding-block: 1.5rem;
 }
 
 .extension-card {
@@ -13,5 +13,24 @@
 }
 
 .dotted-border {
-  border-style: dashed;
+  margin-bottom: 1rem;
+  span {
+    margin-inline: 0.26rem;
+  }
+}
+
+img {
+  margin-bottom: 1.7rem;
+}
+
+small {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+small {
+  display: inline-block;
 }
