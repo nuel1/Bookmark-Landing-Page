@@ -13,7 +13,9 @@
           <app-button value="Get it on Firefox"></app-button>
         </div>
       </div>
-      <div class="hero-banner--theme-cover"></div>
+      <div class="hero-banner--theme-cover">
+        <img src="../../../assets/images/illustration-hero.svg" alt="" />
+      </div>
     </section>
     <section class="features">
       <div class="features--description">
@@ -26,21 +28,71 @@
       </div>
       <div class="features--tab">
         <ul>
-          <li><a href="">Simple Bookmarking</a></li>
-          <li><a href="">Speedy Searching</a></li>
-          <li><a href="">Easy Sharing</a></li>
+          <li>
+            <button (click)="toggleTab(1)">Simple Bookmarking</button>
+            <span class="tab-underline" *ngIf="tab === 1"></span>
+          </li>
+          <li>
+            <button (click)="toggleTab(2)">Speedy Searching</button>
+            <span class="tab-underline" *ngIf="tab === 2"></span>
+          </li>
+          <li>
+            <button (click)="toggleTab(3)">Easy Sharing</button>
+            <span class="tab-underline" *ngIf="tab === 3"></span>
+          </li>
         </ul>
       </div>
-      <div class="features--feature">
-        <div class="feature-image"></div>
-        <div class="feature-description">
-          <h1>Bookmark in one click</h1>
-          <p>
-            Organize your bookmarks however you like. Our simple drag-and-drop
-            interface gives you complete control over how you manage your
-            favourite sites.
-          </p>
-          <app-button value="More Info"></app-button>
+      <div class="features--feature" [ngSwitch]="tab">
+        <div *ngSwitchCase="1">
+          <div class="feature-image">
+            <img
+              src="../../../assets/images/illustration-features-tab-1.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-description">
+            <h1>Bookmark in one click</h1>
+            <p>
+              Organize your bookmarks however you like. Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              favourite sites.
+            </p>
+            <app-button value="More Info"></app-button>
+          </div>
+        </div>
+        <div *ngSwitchCase="2">
+          <div class="feature-image">
+            <img
+              src="../../../assets/images/illustration-features-tab-2.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-description">
+            <h1>Bookmark in one click</h1>
+            <p>
+              Organize your bookmarks however you like. Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              favourite sites.
+            </p>
+            <app-button value="More Info"></app-button>
+          </div>
+        </div>
+        <div *ngSwitchCase="3">
+          <div class="feature-image">
+            <img
+              src="../../../assets/images/illustration-features-tab-3.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-description">
+            <h1>Bookmark in one click</h1>
+            <p>
+              Organize your bookmarks however you like. Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              favourite sites.
+            </p>
+            <app-button value="More Info"></app-button>
+          </div>
         </div>
       </div>
     </section>
@@ -68,7 +120,23 @@
         Here are some of your FAQs. If you have any other questions you'd like
         answered please feel free to email us.
       </p>
+      <div class="faqs">
+        <app-faq></app-faq>
+        <app-button value="More Info"></app-button>
+      </div>
     </section>
-    <div class="faqs"></div>
+    <section class="contact-us">
+      <div class="record"><strong>35,000+ ALREADY JOINED</strong></div>
+      <h1>Stay up-to-date with</h1>
+      <form>
+        <div class="form">
+          <div class="input-container">
+            <input type="email" #email />
+          </div>
+          <div class="error-block">Whoops, make sure it's an email</div>
+        </div>
+        <button click="contact(#email.value)">Contact Us</button>
+      </form>
+    </section>
   </main>
 </div>
