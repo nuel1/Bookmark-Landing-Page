@@ -1,5 +1,8 @@
-.main {
+.page {
   overflow-x: hidden;
+  max-width: 1366px;
+  margin-inline: auto;
+  min-width: 350px;
 }
 
 .extension-list {
@@ -10,19 +13,67 @@
   }
 }
 
-// .faqs {
-//   height: ;
-//   overflow: hidden;
-//   width: 200px;
-//   border-style: solid;
-//   animation: close 4s 0.3s linear forwards;
-// }
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
 
-// @keyframes close {
-//   from {
-//     height: 100%;
-//   }
-//   to {
-//     height: 0;
-//   }
-// }
+.hero-banner {
+  margin-top: 3rem;
+}
+
+.hero-banner {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hero-banner--theme-cover {
+  order: 1;
+  height: 250px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-banner--theme-cover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100vmax;
+  height: 200px;
+  background: var(--bg-primary);
+  border-bottom-left-radius: 50px;
+  top: 50px;
+  left: 10vmax;
+  z-index: -1;
+}
+
+.hero-banner--description {
+  order: 2;
+  margin-top: 3rem;
+
+  p {
+    margin-block-start: 1.5rem;
+    margin-block-end: 2rem;
+  }
+}
+
+.hero-banner--action-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.features {
+  margin-top: 10rem;
+}
+
+.features--description {
+  p {
+    margin-block-start: 1.5rem;
+    margin-block-end: 2rem;
+  }
+}

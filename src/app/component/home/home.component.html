@@ -1,142 +1,158 @@
-<div class="main">
-  <app-header></app-header>
+<div class="page">
   <main>
     <section class="hero-banner">
-      <div class="hero-banner--description">
-        <h1>A Simple Bookmark Manager</h1>
-        <p>
-          A clean and simple interface to organize your favourite websites. Open
-          a new browser tab and see your sites load instantly. Try it for free.
-        </p>
-        <div class="hero-banner--action-btns">
-          <app-button value="Get it on Chrome"></app-button>
-          <app-button value="Get it on Firefox"></app-button>
+      <div class="container">
+        <div class="hero-banner--description">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="hero-banner--action-btns">
+            <app-button
+              btnClass="btn-blue"
+              value="Get it on Chrome"
+            ></app-button>
+            <app-button
+              btnClass="btn-transparent"
+              value="Get it on Firefox"
+            ></app-button>
+          </div>
         </div>
-      </div>
-      <div class="hero-banner--theme-cover">
-        <img src="../../../assets/images/illustration-hero.svg" alt="" />
+        <div class="hero-banner--theme-cover">
+          <img src="../../../assets/images/illustration-hero.svg" alt="" />
+        </div>
       </div>
     </section>
     <section class="features">
-      <div class="features--description">
-        <h1>Features</h1>
-        <p>
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
-        </p>
-      </div>
-      <div class="features--tab">
-        <ul>
-          <li>
-            <button (click)="toggleTab(1)">Simple Bookmarking</button>
-            <span class="tab-underline" *ngIf="tab === 1"></span>
-          </li>
-          <li>
-            <button (click)="toggleTab(2)">Speedy Searching</button>
-            <span class="tab-underline" *ngIf="tab === 2"></span>
-          </li>
-          <li>
-            <button (click)="toggleTab(3)">Easy Sharing</button>
-            <span class="tab-underline" *ngIf="tab === 3"></span>
-          </li>
-        </ul>
-      </div>
-      <div class="features--feature" [ngSwitch]="tab">
-        <div *ngSwitchCase="1">
-          <div class="feature-image">
-            <img
-              src="../../../assets/images/illustration-features-tab-1.svg"
-              alt=""
-            />
-          </div>
-          <div class="feature-description">
-            <h1>Bookmark in one click</h1>
-            <p>
-              Organize your bookmarks however you like. Our simple drag-and-drop
-              interface gives you complete control over how you manage your
-              favourite sites.
-            </p>
-            <app-button value="More Info"></app-button>
-          </div>
+      <div class="container">
+        <div class="features--description">
+          <h2>Features</h2>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
         </div>
-        <div *ngSwitchCase="2">
-          <div class="feature-image">
-            <img
-              src="../../../assets/images/illustration-features-tab-2.svg"
-              alt=""
-            />
-          </div>
-          <div class="feature-description">
-            <h1>Bookmark in one click</h1>
-            <p>
-              Organize your bookmarks however you like. Our simple drag-and-drop
-              interface gives you complete control over how you manage your
-              favourite sites.
-            </p>
-            <app-button value="More Info"></app-button>
-          </div>
+        <div class="features--tab">
+          <ul>
+            <li>
+              <button (click)="toggleTab(1)">Simple Bookmarking</button>
+              <span class="tab-underline" *ngIf="tab === 1"></span>
+            </li>
+            <li>
+              <button (click)="toggleTab(2)">Speedy Searching</button>
+              <span class="tab-underline" *ngIf="tab === 2"></span>
+            </li>
+            <li>
+              <button (click)="toggleTab(3)">Easy Sharing</button>
+              <span class="tab-underline" *ngIf="tab === 3"></span>
+            </li>
+          </ul>
         </div>
-        <div *ngSwitchCase="3">
-          <div class="feature-image">
-            <img
-              src="../../../assets/images/illustration-features-tab-3.svg"
-              alt=""
-            />
+        <div class="features--feature" [ngSwitch]="tab">
+          <div *ngSwitchCase="1">
+            <div class="feature-image">
+              <img
+                src="../../../assets/images/illustration-features-tab-1.svg"
+                alt=""
+              />
+            </div>
+            <div class="feature-description">
+              <h2>Bookmark in one click</h2>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <app-button value="More Info"></app-button>
+            </div>
           </div>
-          <div class="feature-description">
-            <h1>Bookmark in one click</h1>
-            <p>
-              Organize your bookmarks however you like. Our simple drag-and-drop
-              interface gives you complete control over how you manage your
-              favourite sites.
-            </p>
-            <app-button value="More Info"></app-button>
+          <div *ngSwitchCase="2">
+            <div class="feature-image">
+              <img
+                src="../../../assets/images/illustration-features-tab-2.svg"
+                alt=""
+              />
+            </div>
+            <div class="feature-description">
+              <h2>Bookmark in one click</h2>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <app-button value="More Info"></app-button>
+            </div>
+          </div>
+          <div *ngSwitchCase="3">
+            <div class="feature-image">
+              <img
+                src="../../../assets/images/illustration-features-tab-3.svg"
+                alt=""
+              />
+            </div>
+            <div class="feature-description">
+              <h2>Bookmark in one click</h2>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <app-button value="More Info"></app-button>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="extensions">
-      <h1>Download the extension</h1>
-      <p>
-        We've got more browsers in the pipeline. Please do let us know if you've
-        got a favourite you'd like us to prioritize.
-      </p>
-      <ul class="extension-list">
-        <!-- <img src="../../../assets/images/logo-chrome.svg" alt="" /> -->
-        <li>
-          <app-extension-card
-            src="../../../assets/images/logo-chrome.svg"
-            alt="Chrome logo"
-            title="Add to Chrome"
-            version="Minimum version 62"
-          ></app-extension-card>
-        </li>
-      </ul>
+      <div class="container">
+        <h2>Download the extension</h2>
+        <p>
+          We've got more browsers in the pipeline. Please do let us know if
+          you've got a favourite you'd like us to prioritize.
+        </p>
+        <ul class="extension-list">
+          <!-- <img src="../../../assets/images/logo-chrome.svg" alt="" /> -->
+          <li>
+            <app-extension-card
+              src="../../../assets/images/logo-chrome.svg"
+              alt="Chrome logo"
+              title="Add to Chrome"
+              version="Minimum version 62"
+            ></app-extension-card>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="faq">
-      <h1>Frequently Asked Questions</h1>
-      <p>
-        Here are some of your FAQs. If you have any other questions you'd like
-        answered please feel free to email us.
-      </p>
-      <div class="faqs">
-        <app-faq></app-faq>
-        <app-button value="More Info"></app-button>
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          Here are some of your FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+        <div class="faqs">
+          <app-faq></app-faq>
+          <app-button value="More Info"></app-button>
+        </div>
       </div>
     </section>
     <section class="contact-us">
-      <div class="record"><strong>35,000+ ALREADY JOINED</strong></div>
-      <h1>Stay up-to-date with</h1>
-      <form>
-        <div class="form">
-          <div class="input-container">
-            <input type="email" #email />
+      <div class="container">
+        <div class="record"><strong>35,000+ ALREADY JOINED</strong></div>
+        <h2>Stay up-to-date with</h2>
+        <form>
+          <div class="form">
+            <div class="input-container">
+              <input type="email" #email />
+            </div>
+            <div class="error-block">Whoops, make sure it's an email</div>
           </div>
-          <div class="error-block">Whoops, make sure it's an email</div>
-        </div>
-        <button click="contact(#email.value)">Contact Us</button>
-      </form>
+          <button click="contact(#email.value)">Contact Us</button>
+        </form>
+      </div>
     </section>
   </main>
 </div>
