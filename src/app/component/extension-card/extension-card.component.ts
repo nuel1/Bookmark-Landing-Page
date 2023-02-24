@@ -7,10 +7,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./extension-card.component.scss'],
 })
 export class ExtensionCardComponent {
-  @Input() src = '';
+  @Input() browserLogo = '';
+  @Input() bgDotted = '';
   @Input() alt = '';
   @Input() title = '';
   @Input() version = '';
-
-  iterationMeans = Array.from({ length: 18 });
 }

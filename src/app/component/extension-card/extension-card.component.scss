@@ -1,15 +1,24 @@
 .extension-card {
   width: 100%;
-  box-shadow: 0px 10px 12px hsl(231deg 69% 60% / 17%);
-  border-radius: 10px;
+  box-shadow: 0px 10px 12px rgba(83, 104, 223, 0.134);
+  border-radius: 15px;
   text-align: center;
-  padding-block: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  margin-top: 3rem;
+  overflow-x: hidden;
 }
 
 .extension-card {
   img {
     vertical-align: middle;
   }
+}
+
+.browser-logo {
+  object-fit: cover;
+  width: 90px;
+  margin-bottom: 1.7rem;
 }
 
 .dotted-border {
@@ -19,18 +28,18 @@
   }
 }
 
-img {
-  margin-bottom: 1.7rem;
-}
-
 small {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
 }
 
 p {
   margin-bottom: 0.5rem;
+  color: #232429;
+  font-size: 1.25rem;
 }
 
 small {
   display: inline-block;
+  color: var(--primary);
 }

@@ -1,3 +1,7 @@
+ul {
+  margin-bottom: 3rem;
+}
+
 #faq-answer {
   overflow: hidden;
 
@@ -12,4 +16,26 @@
 
 .close-faq {
   display: none;
+}
+
+button {
+  background: transparent;
+  border: transparent;
+}
+
+li {
+  border-bottom: 1px solid hsla(229deg, 8%, 60%, 0.45);
+  padding-top: 2rem;
+  padding-bottom: 1.2rem;
+}
+
+.faq-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-container {
+  p {
+    color: #232429;
+  }
 }

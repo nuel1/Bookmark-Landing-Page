@@ -3,7 +3,7 @@
   src: url(assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
-// Variable
+// Css Variables
 
 :root {
   --primary: hsl(229, 8%, 60%);
@@ -12,6 +12,7 @@
   --btn-secondary: hsl(0, 94%, 66%);
   --bg-primary: hsl(231, 69%, 60%);
   --bg-secondary: hsl(229, 31%, 21%);
+  --bg-tertiary: hsl(0, 0%, 100%);
   --min-font-weight: 500;
   --max-font-weight: 400;
   --max-page-width: 85%;
@@ -62,8 +63,12 @@ h1 {
   font-size: calc((1rem + 15px));
 }
 
-h1 {
+h2 {
   font-size: calc((1rem + 12px));
+}
+
+h3 {
+  font-size: calc((1rem + 9px));
 }
 
 p,
@@ -74,6 +79,8 @@ button {
 p {
   line-height: 1.5;
 }
+
+// Global styles
 
 .btn-login--mobile {
   width: 100%;
@@ -100,7 +107,15 @@ p {
 
 .mobile-navbar-header,
 .mobile-header,
-.dotted-border {
+.hero-banner .container,
+.hero-banner--action-btns,
+.socials-media-icons,
+.features--tab ul,
+.extension-list,
+.faq-container,
+.input-container,
+.footer-nav,
+.socials-media-icons {
   display: flex;
 }
 
@@ -120,4 +135,13 @@ header,
   background: transparent;
   color: darken(hsl(229, 8%, 60%), 25);
   box-shadow: 0px 8px 15px hsl(229deg 8% 60% / 42%);
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-more {
+  display: block;
+  margin-inline: auto;
 }

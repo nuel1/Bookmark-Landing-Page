@@ -1,13 +1,22 @@
-<ul *ngFor="let faq of faqs">
-  <li>
-    {{ faq.question }}
+<ul>
+  <li *ngFor="let faq of faqs">
+    <div class="faq-container">
+      <p>
+        {{ faq.question }}
+      </p>
+      <button (click)="toggleFaq(faq)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+          <path
+            fill="none"
+            stroke="#5267DF"
+            stroke-width="3"
+            d="M1 1l8 8 8-8"
+          />
+        </svg>
+      </button>
+    </div>
+    <div id="faq-answer" [class]="faq.faqOpen ? 'open-faq' : 'close-faq'">
+      <p>{{ faq.answer }}</p>
+    </div>
   </li>
-  <button (click)="toggleFaq(faq)">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-      <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
-    </svg>
-  </button>
-  <div id="faq-answer" [class]="faq.faqOpen ? 'open-faq' : 'close-faq'">
-    <p>{{ faq.answer }}</p>
-  </div>
 </ul>
