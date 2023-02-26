@@ -32,7 +32,7 @@ p {
 
 .hero-banner--theme-cover {
   order: 1;
-  height: 250px;
+  height: 200px;
 }
 
 .hero-banner--theme-cover,
@@ -52,20 +52,44 @@ p {
   position: absolute;
   width: 100%;
   background: var(--bg-primary);
-  top: 50px;
+  bottom: 100%;
   z-index: -1;
 }
 
 .hero-banner--theme-cover::after {
   left: 20%;
   border-bottom-left-radius: 80px;
-  height: 200px;
+  height: 175px;
+  top: 30px;
+}
+
+.feature-image::after {
+  height: 185px;
 }
 
 .feature-image::after {
   left: -20%;
   border-bottom-right-radius: 80px;
-  height: 218px;
+}
+
+.feature-image-1::after {
+  top: 35px;
+}
+
+.feature-image-2 {
+  height: 365px;
+}
+
+.feature-image-2::after {
+  top: 80px;
+}
+
+.feature-image-3 {
+  height: 365px;
+}
+
+.feature-image-3::after {
+  top: 80px;
 }
 
 .hero-banner--description {
@@ -236,4 +260,97 @@ form {
 
 .form {
   margin-bottom: 1rem;
+}
+
+@media (min-width: 360px) {
+  .hero-banner--theme-cover {
+    height: 215px;
+  }
+
+  .hero-banner--theme-cover::after {
+    top: 45px;
+  }
+
+  .feature-image-1::after {
+    top: 55px;
+  }
+
+  .feature-image-2::after,
+  .feature-image-3::after {
+    top: 110px;
+  }
+}
+
+@media (min-width: 375px) {
+  .hero-banner--theme-cover {
+    height: 230px;
+  }
+
+  .hero-banner--theme-cover::after {
+    top: 60px;
+  }
+
+  .feature-image-1 {
+    height: 355px;
+  }
+
+  .feature-image-1::after {
+    top: 70px;
+  }
+
+  .feature-image-2 {
+    height: 415px;
+  }
+
+  .feature-image-2::after {
+    top: 125px;
+  }
+
+  .feature-image-3 {
+    height: 405px;
+  }
+
+  .feature-image-3::after {
+    top: 130px;
+  }
+}
+
+@media (min-width: 414px) {
+  .hero-banner--theme-cover {
+    height: 250px;
+  }
+
+  .hero-banner--theme-cover::after {
+    top: 75px;
+  }
+
+  .feature-image-1 {
+    height: 375px;
+  }
+
+  .feature-image-1::after {
+    top: 90px;
+  }
+
+  .feature-image-2 {
+    height: 430px;
+  }
+
+  .feature-image-2::after {
+    top: 150px;
+  }
+
+  .feature-image-3 {
+    height: 415px;
+  }
+
+  .feature-image-3::after {
+    top: 150px;
+  }
+
+  .features--tab {
+    button {
+      font-size: 1.1rem;
+    }
+  }
 }

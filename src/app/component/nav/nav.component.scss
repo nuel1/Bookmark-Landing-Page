@@ -10,6 +10,11 @@
   fill: var(--bg-secondary);
 }
 
+.mobile-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navbar--fixed {
   position: fixed;
   top: 0;
@@ -19,6 +24,7 @@
   height: 100vh;
   background: hsla(229, 31%, 21%, 0.938);
   display: none;
+  z-index: 2;
 }
 
 .mobile-navbar {
@@ -64,4 +70,14 @@
 
 .main-navbar {
   display: none;
+}
+
+@media (min-width: 768px) {
+  // .navbar--fixed {
+  //   display: block;
+  // }
+  .header-btn-wrapper {
+    align-items: center;
+    gap: 1rem;
+  }
 }

@@ -60,15 +60,19 @@ h6 {
 }
 
 h1 {
-  font-size: calc((1rem + 15px));
+  font-size: calc((1rem + 13px));
 }
 
 h2 {
-  font-size: calc((1rem + 12px));
+  font-size: calc((1rem + 10px));
 }
 
 h3 {
-  font-size: calc((1rem + 9px));
+  font-size: calc((1rem + 7px));
+}
+
+h4 {
+  font-size: 0.8rem;
 }
 
 p,
@@ -81,6 +85,13 @@ p {
 }
 
 // Global styles
+
+.page-container {
+  overflow-x: hidden;
+  max-width: 1366px;
+  min-width: 320px;
+  margin-inline: auto;
+}
 
 .btn-login--mobile {
   width: 100%;
@@ -115,7 +126,9 @@ p {
 .faq-container,
 .input-container,
 .footer-nav,
-.socials-media-icons {
+.socials-media-icons,
+.header-btn-wrapper,
+.mobile-header {
   display: flex;
 }
 
@@ -126,6 +139,12 @@ header,
 
 .btn-blue {
   background: var(--btn-primary);
+  color: var(--secondary);
+  border: transparent;
+}
+
+.btn-red {
+  background: var(--btn-secondary);
   color: var(--secondary);
   border: transparent;
 }
@@ -144,4 +163,66 @@ header,
 .btn-more {
   display: block;
   margin-inline: auto;
+}
+
+.tab-login-btn {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  h1 {
+    font-size: calc(1rem + 15px);
+  }
+
+  h2 {
+    font-size: calc(1rem + 13px);
+  }
+
+  h3 {
+    font-size: calc((1rem + 10px));
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 414px) {
+  h1 {
+    font-size: calc(1rem + 18px);
+  }
+
+  h2 {
+    font-size: calc(1rem + 14px);
+  }
+
+  h3 {
+    font-size: calc((1rem + 11px));
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: calc(1rem + 20px);
+  }
+
+  .hero-banner--action-btns {
+    button {
+      padding-block: 1.35rem !important;
+      font-size: 1.05rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-login--mobile {
+    display: none;
+  }
+
+  .tab-login-btn {
+    display: block;
+    padding-inline: 1.7rem !important;
+  }
 }
