@@ -1,5 +1,19 @@
 button {
-  padding: 0.9rem 1.1rem;
+  padding-block: 0.9rem;
+  padding-inline: 1.1rem;
   border-radius: 5px;
   font-weight: 500;
+  letter-spacing: normal;
+}
+
+@media (min-width: 414px) {
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1114px) {
+  button {
+    padding-inline: 2rem;
+  }
 }

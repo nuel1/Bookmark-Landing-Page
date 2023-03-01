@@ -33,6 +33,7 @@ li {
 
 a {
   text-decoration: none;
+  font-size: 1rem;
 }
 
 img,
@@ -43,10 +44,12 @@ button {
 
 img {
   width: 100%;
+  max-width: 500px;
 }
 
 input {
   outline: none;
+  font-size: 1rem;
 }
 
 h1,
@@ -56,11 +59,17 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  color: darken(hsl(229, 8%, 60%), 45);
+  color: var(--bg-secondary);
+}
+
+.faqs p,
+a {
+  color: var(--bg-secondary);
 }
 
 h1 {
   font-size: calc((1rem + 13px));
+  color: var(--bg-secondary);
 }
 
 h2 {
@@ -156,7 +165,7 @@ header,
   box-shadow: 0px 8px 15px hsl(229deg 8% 60% / 42%);
 }
 
-.hidden {
+.btn-more-info {
   display: none;
 }
 
@@ -200,8 +209,8 @@ header,
     font-size: calc((1rem + 11px));
   }
 
-  p {
-    font-size: 1.1rem;
+  p .features--tab button {
+    font-size: 1.05rem;
   }
 
   h1 {
@@ -211,7 +220,6 @@ header,
   .hero-banner--action-btns {
     button {
       padding-block: 1.35rem !important;
-      font-size: 1.05rem;
     }
   }
 }
@@ -224,5 +232,43 @@ header,
   .tab-login-btn {
     display: block;
     padding-inline: 1.7rem !important;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: calc(1rem + 23px);
+  }
+
+  h2 {
+    font-size: calc(1rem + 16px);
+  }
+
+  h3 {
+    font-size: calc((1rem + 13px));
+  }
+}
+
+@media (min-width: 1114px) {
+  .navbar-login-btn {
+    background: var(--btn-secondary);
+    color: var(--secondary);
+    border: transparent;
+  }
+
+  h1 {
+    font-size: calc(1rem + 25px);
+  }
+
+  .btn-more-info {
+    display: block;
+  }
+}
+
+@media (min-width: 1366px) {
+  h1 {
+    font-size: calc(1rem + 30px);
   }
 }

@@ -33,3 +33,34 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: 768px) {
+  .footer-nav {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .page-links {
+    display: inherit;
+    flex: 1 0 0;
+    gap: 1rem;
+  }
+
+  .logo,
+  .page-links li {
+    margin-bottom: 0;
+  }
+
+  .socials-media-icons {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1114px) {
+  .footer-nav {
+    gap: 3rem;
+  }
+
+  .page-links {
+    gap: 2rem;
+  }
+}
