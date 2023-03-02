@@ -9,6 +9,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { ButtonComponent } from './component/button/button.component';
 import { ExtensionCardComponent } from './component/extension-card/extension-card.component';
 import { FaqComponent } from './component/faq/faq.component';
+import { FormComponent } from './component/form/form.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FaqComponent } from './component/faq/faq.component';
     ButtonComponent,
     ExtensionCardComponent,
     FaqComponent,
+    FormComponent,
   ],
   imports: [BrowserModule],
   providers: [],
