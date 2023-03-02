@@ -15,7 +15,7 @@
         </svg>
       </button>
     </div>
-    <div id="faq-answer" [class]="faq.faqOpen ? 'open-faq' : 'close-faq'">
+    <div id="faq-answer" [class.hidden]="!faq.faqOpened">
       <p>{{ faq.answer }}</p>
     </div>
   </li>
