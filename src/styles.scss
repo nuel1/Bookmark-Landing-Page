@@ -157,7 +157,13 @@ header,
 .btn-blue {
   background: var(--btn-primary);
   color: var(--secondary);
-  border: transparent;
+  border: 0.12rem solid transparent;
+
+  &:hover {
+    border-color: var(--btn-primary);
+    color: var(--btn-primary);
+    background: none;
+  }
 }
 
 .btn-red {
@@ -167,10 +173,15 @@ header,
 }
 
 .btn-transparent {
-  border: transparent;
+  border: 0.12rem solid transparent;
   background: transparent;
   color: darken(hsl(229, 8%, 60%), 25);
   box-shadow: 0px 8px 15px hsl(229deg 8% 60% / 42%);
+
+  &:hover {
+    color: var(--bg-secondary);
+    border-color: var(--bg-secondary);
+  }
 }
 
 .btn-more-info {
@@ -282,5 +293,17 @@ header,
 @media (min-width: 1366px) {
   h1 {
     font-size: calc(1rem + 30px);
+  }
+}
+
+.navbar-login-btn {
+  border: 0.12rem solid transparent;
+}
+
+.navbar-login-btn {
+  &:hover {
+    background: none;
+    color: var(--btn-secondary);
+    border-color: var(--btn-secondary);
   }
 }
