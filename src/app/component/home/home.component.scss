@@ -171,6 +171,11 @@ p {
   width: calc(100% - 10vmax);
   background: transparent;
   border: transparent;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--btn-secondary);
+  }
 }
 
 .active-tab {

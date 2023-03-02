@@ -19,7 +19,14 @@ form {
     width: 100%;
     border-radius: 5px;
     padding: 0.96rem 0;
-    border: transparent;
+    border: 0.12rem solid transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: var(--btn-secondary);
+      color: var(--btn-secondary);
+      background: var(--secondary);
+    }
   }
 }
 

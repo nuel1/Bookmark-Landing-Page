@@ -26,6 +26,17 @@
   z-index: 2;
 }
 
+.navbar-links {
+  a {
+    color: #232429;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--btn-secondary);
+    }
+  }
+}
+
 .mobile-navbar {
   width: var(--max-page-width);
   padding-block: 2.5rem;
