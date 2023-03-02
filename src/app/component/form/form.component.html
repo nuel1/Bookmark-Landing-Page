@@ -1,0 +1,17 @@
+<form>
+  <div class="form" [class.form--error]="error">
+    <div class="input-container">
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        #email
+        (keyup)="validateEmail(email.value)"
+      />
+      <img src="../../../assets/images/icon-error.svg" alt="" />
+    </div>
+    <div class="error-block">
+      <small><i>Whoops, make sure it's an email</i></small>
+    </div>
+  </div>
+  <button>Contact Us</button>
+</form>
