@@ -1,6 +1,6 @@
 <header>
   <nav>
-    <div class="navbar--fixed">
+    <div class="navbar--fixed" [class.hidden]="mobileNavbarIsClosed">
       <div class="mobile-navbar">
         <div class="mobile-navbar-header">
           <div class="logo">
@@ -26,7 +26,7 @@
               </g>
             </svg>
           </div>
-          <button class="btn--close-navbar">
+          <button class="btn--close-navbar" (click)="toggleMobileNavbar()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
               <path
                 fill="#FFF"
@@ -98,7 +98,7 @@
             value="Login"
             btnClass="btn-red tab-login-btn"
           ></app-button>
-          <button class="btn--open-navbar">
+          <button class="btn--open-navbar" (click)="toggleMobileNavbar()">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
               <path
                 fill="#242A45"

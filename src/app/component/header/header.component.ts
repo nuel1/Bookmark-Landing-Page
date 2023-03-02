@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  mobileNavbarIsClosed = true;
+  toggleMobileNavbar() {
+    this.mobileNavbarIsClosed = !this.mobileNavbarIsClosed;
+    console.log(this.mobileNavbarIsClosed);
+  }
+}
