@@ -1,10 +1,10 @@
 export interface iFaq {
   question: string;
   answer: string;
-  faqOpen: boolean;
+  faqOpened: boolean;
 }
 export class Faq implements iFaq {
   question = '';
   answer = '';
-  faqOpen = false;
+  faqOpened = false;
 }
