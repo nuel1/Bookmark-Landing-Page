@@ -18,20 +18,16 @@ ul {
   display: none;
 }
 
-button {
-  background: transparent;
-  border: transparent;
-}
-
 li {
   border-bottom: 1px solid hsla(229deg, 8%, 60%, 0.45);
-  padding-top: 2rem;
-  padding-bottom: 1.2rem;
 }
 
 .faq-container {
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1.2rem;
+  padding-top: 2rem;
+  cursor: pointer;
 }
 
 .faq-container {
@@ -41,6 +37,7 @@ li {
 }
 
 #faq-answer {
+  margin-bottom: 1.2rem;
   p {
     color: var(--primary);
   }
