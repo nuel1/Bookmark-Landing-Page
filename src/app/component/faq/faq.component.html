@@ -1,21 +1,28 @@
 <ul>
   <li *ngFor="let faq of faqs">
-    <div class="faq-container" (click)="toggleFaq(faq)">
-      <p>
-        {{ faq.question }}
-      </p>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="12"
-        [style]="
-          faq.faqOpened
-            ? 'transform: rotate(180deg); display: block'
-            : 'transform: none'
-        "
-      >
-        <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8" />
-      </svg>
+    <div>
+      <button class="faq-container" (click)="toggleFaq(faq)">
+        <p>
+          {{ faq.question }}
+        </p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="12"
+          [style]="
+            faq.faqOpened
+              ? 'transform: rotate(180deg); display: block'
+              : 'transform: none'
+          "
+        >
+          <path
+            fill="none"
+            stroke="#5267DF"
+            stroke-width="3"
+            d="M1 1l8 8 8-8"
+          />
+        </svg>
+      </button>
     </div>
     <div id="faq-answer" [class.hidden]="!faq.faqOpened">
       <p>{{ faq.answer }}</p>
