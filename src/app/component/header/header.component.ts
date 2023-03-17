@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   mobileNavbarIsClosed = true;
+
   toggleMobileNavbar() {
     this.mobileNavbarIsClosed = !this.mobileNavbarIsClosed;
-    console.log(this.mobileNavbarIsClosed);
   }
 }
